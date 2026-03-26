@@ -256,8 +256,8 @@ img{display:block;width:100%;height:100%;object-fit:cover}
   border:1px solid rgba(0,0,0,.04);
 }
 .wi-icon svg{width:20px;height:20px;color:var(--red)}
-.why-item h4{font-weight:800;font-size:.9rem;margin-bottom:5px;letter-spacing:.02em}
-.why-item p{font-size:.84rem;color:var(--gray);line-height:1.6}
+.why-item h4{font-weight:800;font-size:.9rem;margin-bottom:5px;letter-spacing:.02em;color:var(--white)}
+.why-item p{font-size:.84rem;color:rgba(255,255,255,.45);line-height:1.6}
 
 
 /* === REVIEWS === */
