@@ -250,10 +250,10 @@ img{display:block;width:100%;height:100%;object-fit:cover}
 .why-item:last-child{border-bottom:none}
 .wi-icon{
   width:48px;height:48px;border-radius:14px;
-  background:var(--white);
+  background:rgba(255,255,255,.06);
   display:flex;align-items:center;justify-content:center;
-  flex-shrink:0;box-shadow:0 2px 8px rgba(0,0,0,.04);
-  border:1px solid rgba(0,0,0,.04);
+  flex-shrink:0;
+  border:1px solid rgba(255,255,255,.1);
 }
 .wi-icon svg{width:20px;height:20px;color:var(--red)}
 .why-item h4{font-weight:800;font-size:.9rem;margin-bottom:5px;letter-spacing:.02em;color:var(--white)}
