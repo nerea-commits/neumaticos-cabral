@@ -243,7 +243,7 @@ img{display:block;width:100%;height:100%;object-fit:cover}
 .why-list{display:flex;flex-direction:column;gap:0}
 .why-item{
   padding:clamp(22px,2.5vw,32px) 0;
-  border-bottom:1px solid rgba(0,0,0,.07);
+  border-bottom:1px solid rgba(255,255,255,.08);
   display:flex;gap:20px;align-items:flex-start;
 }
 .why-item:first-child{padding-top:0}
