@@ -226,7 +226,7 @@ img{display:block;width:100%;height:100%;object-fit:cover}
 
 
 /* === WHY US === */
-.why{padding:clamp(80px,10vw,140px) 0;background:var(--offwhite);position:relative;overflow:hidden}
+.why{padding:clamp(80px,10vw,140px) 0;background:var(--black);color:var(--white);position:relative;overflow:hidden}
 .why::after{content:'';position:absolute;inset:0;background:var(--grain);pointer-events:none;opacity:.3}
 .why .w{position:relative;z-index:2}
 .why-layout{display:grid;grid-template-columns:1fr 1fr;gap:clamp(40px,6vw,100px);align-items:center}
