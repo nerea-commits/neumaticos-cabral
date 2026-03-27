@@ -299,33 +299,21 @@ p {
 .hero-title {
   font-family: var(--display);
   font-size: clamp(1.8rem, 3.8vw, 48px);
-  line-height: .95;
+  line-height: 1.05;
   color: var(--cream);
-  margin-bottom: 24px;
-  max-width: 520px;
+  margin-bottom: 28px;
+  max-width: 480px;
 }
 .hero-title em {
   font-family: 'Bitter', serif;
   font-style: italic;
   font-weight: 700;
-  font-size: 86%;
+  font-size: 92%;
   color: var(--red);
-  display: block;
+  display: inline;
   -webkit-text-stroke: 0;
-  position: relative;
-  padding-bottom: 14px;
-}
-.hero-title em::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 62%;
-  height: 8px;
-  background: none;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 10' preserveAspectRatio='none'%3E%3Cpath d='M2 7 C18 3, 35 9, 54 6 C72 3, 88 8, 108 5 C126 2, 142 8, 162 5 C175 3, 188 7, 198 4' stroke='%23B85C2A' stroke-width='3.5' fill='none' stroke-linecap='round' stroke-linejoin='round' opacity='0.85'/%3E%3Cpath d='M6 8 C22 6, 48 9, 70 7 C90 5, 112 8, 130 6' stroke='%23B85C2A' stroke-width='1.5' fill='none' stroke-linecap='round' opacity='0.4'/%3E%3C/svg%3E");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
+  position: static;
+  padding-bottom: 0;
 }
 
 .hero-desc {
