@@ -6,71 +6,45 @@
   <title>Neumáticos Cabral — Tu taller de confianza en Vigo</title>
   <meta name="description" content="Neumáticos para coche y moto, mecánica rápida en Vigo. +10 años en Cabral. 4.8★ en Google con 273 opiniones. Llámanos al 661 176 081.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,200;0,9..144,300;1,9..144,200;1,9..144,300&family=Outfit:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Oswald:wght@300;400;500;700&family=Playfair+Display:ital,wght@1,400;1,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<nav class="nav">
-  <div class="nav-left">
-    <div class="nav-logo">NC</div>
-    <span class="nav-name">Neumáticos Cabral</span>
+<nav class="nav" id="top">
+  <span class="nav-logo">NEUMÁTICOS <em>CABRAL</em></span>
+  <div class="nav-links">
+    <a href="#servicios">Servicios</a>
+    <a href="#nosotros">Nosotros</a>
+    <a href="#opiniones">Opiniones</a>
+    <a href="#contacto">Contacto</a>
   </div>
-  <div class="nav-right">
-    <a href="#servicios" class="nav-link">Servicios</a>
-    <a href="#opiniones" class="nav-link">Opiniones</a>
-    <a href="#nosotros" class="nav-link">Nosotros</a>
-    <a href="#contacto" class="nav-link">Contacto</a>
-    <div class="nav-dot"></div>
-    <a href="tel:+34661176081" class="nav-phone">661 176 081</a>
-  </div>
+  <a href="tel:+34661176081" class="nav-phone">661 176 081</a>
   <button class="mob-btn" aria-label="Menú"><span></span><span></span><span></span></button>
 </nav>
 
 <section class="hero">
+  <div class="hero-year">2013</div>
   <div class="hero-left">
     <div class="hero-tag">
-      <div class="hero-tag-line"></div>
+      <div class="hero-tag-bar"></div>
       <span class="hero-tag-text">Taller en Cabral, Vigo · Desde 2013</span>
     </div>
-    <h1>El taller<br>al que<br><em>siempre vuelves</em></h1>
-    <p class="hero-desc">Neumáticos, mecánica rápida y un trato que no vas a encontrar en otro sitio. 273 clientes nos avalan con un 4.8 en Google.</p>
+    <h1>EL<br><span class="red">TALLER</span><span class="outline">AL QUE VUELVES</span></h1>
+    <p class="hero-sub">Neumáticos, mecánica rápida y un trato que no vas a encontrar en otro sitio.</p>
     <div class="hero-btns">
-      <a href="tel:+34661176081" class="btn-red">
+      <a href="tel:+34661176081" class="btn-main">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-        Llámanos ahora
+        Llámanos · 661 176 081
       </a>
-      <a href="#servicios" class="btn-line">Nuestros servicios ↓</a>
+      <a href="#servicios" class="btn-ghost">Ver servicios ↓</a>
     </div>
   </div>
   <div class="hero-right">
-    <div class="hero-card">
-      <div class="hero-card-top">
-        <div class="hero-card-score">4.8</div>
-        <div class="hero-card-meta">
-          <div class="hero-card-stars">★★★★★</div>
-          <div class="hero-card-sub">Google Reviews</div>
-        </div>
-      </div>
-      <div class="hero-card-body">
-        <div class="hero-card-row">
-          <span class="hcr-label">Opiniones</span>
-          <span class="hcr-val">273</span>
-        </div>
-        <div class="hero-card-row">
-          <span class="hcr-label">En Vigo desde</span>
-          <span class="hcr-val">2013</span>
-        </div>
-        <div class="hero-card-row">
-          <span class="hcr-label">Posición</span>
-          <span class="hcr-val">TOP 1</span>
-        </div>
-        <div class="hero-card-row">
-          <span class="hcr-label">Cambio en</span>
-          <span class="hcr-val">30 min</span>
-        </div>
-      </div>
-      <a href="https://www.google.com/search?q=neumaticos+cabral+vigo+opiniones" target="_blank" class="hero-card-cta">Ver las 273 opiniones →</a>
+    <!-- CAMBIAR: sustituye por foto real del taller → img/taller.jpg -->
+    <div class="hero-photo-placeholder">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+      <span>Foto real del taller<br>o de Dani trabajando</span>
     </div>
   </div>
 </section>
@@ -80,135 +54,102 @@
 </div>
 
 <section class="services" id="servicios">
-  <div class="srv-header">
-    <div>
-      <div class="sec-tag"><div class="sec-tag-line"></div><span class="sec-tag-text">Servicios</span></div>
-      <h2 class="sec-h">Todo lo que tu coche<br><em>necesita.</em></h2>
-    </div>
-    <div class="sec-num">05</div>
+  <div class="srv-intro">
+    <h2>LO QUE<br><em>HACEMOS</em></h2>
+    <p class="srv-intro-sub">Para coches y motos, con las mejores marcas y precio claro antes de empezar.</p>
   </div>
-  <div class="srv-grid">
-    <div class="srv-item">
-      <div class="srv-item-bar"></div>
-      <div class="srv-item-num">01</div>
-      <h3>Neumáticos</h3>
-      <p>Pirelli, Goodyear, Bridgestone, Continental. Montaje, equilibrado y válvula nueva incluidos.</p>
+  <div class="srv-list">
+    <div class="srv-row">
+      <span class="srv-row-n">01</span>
+      <span class="srv-row-name">NEUMÁTICOS</span>
+      <span class="srv-row-desc">Pirelli, Goodyear, Bridgestone, Continental. Montaje y equilibrado incluidos.</span>
+      <span class="srv-row-arrow">→</span>
     </div>
-    <div class="srv-item">
-      <div class="srv-item-bar"></div>
-      <div class="srv-item-num">02</div>
-      <h3>Mecánica rápida</h3>
-      <p>Aceites, filtros, frenos, distribución, baterías. Sin dejar el coche días.</p>
+    <div class="srv-row">
+      <span class="srv-row-n">02</span>
+      <span class="srv-row-name">MECÁNICA</span>
+      <span class="srv-row-desc">Aceites, filtros, frenos, distribución, baterías. Sin dejar el coche días.</span>
+      <span class="srv-row-arrow">→</span>
     </div>
-    <div class="srv-item">
-      <div class="srv-item-bar"></div>
-      <div class="srv-item-num">03</div>
-      <h3>Alineado</h3>
-      <p>Corregimos dirección y equilibrio con equipamiento profesional. Lo notas al volante.</p>
+    <div class="srv-row">
+      <span class="srv-row-n">03</span>
+      <span class="srv-row-name">ALINEADO</span>
+      <span class="srv-row-desc">Corregimos dirección y equilibrio con equipamiento profesional.</span>
+      <span class="srv-row-arrow">→</span>
     </div>
-    <div class="srv-item">
-      <div class="srv-item-bar"></div>
-      <div class="srv-item-num">04</div>
-      <h3>Pre-ITV</h3>
-      <p>Revisamos el coche antes de la ITV y solucionamos lo que haga falta.</p>
+    <div class="srv-row">
+      <span class="srv-row-n">04</span>
+      <span class="srv-row-name">PRE-ITV</span>
+      <span class="srv-row-desc">Revisamos antes de la ITV y solucionamos lo que haga falta.</span>
+      <span class="srv-row-arrow">→</span>
     </div>
-    <div class="srv-item">
-      <div class="srv-item-bar"></div>
-      <div class="srv-item-num">05</div>
-      <h3>Motos</h3>
-      <p>Neumáticos en todas las medidas y marcas. Montaje y equilibrado profesional incluido.</p>
+    <div class="srv-row">
+      <span class="srv-row-n">05</span>
+      <span class="srv-row-name">MOTOS</span>
+      <span class="srv-row-desc">Neumáticos en todas las medidas. Montaje y equilibrado incluido.</span>
+      <span class="srv-row-arrow">→</span>
     </div>
   </div>
 </section>
 
 <section class="why" id="nosotros">
-  <div class="why-left">
-    <div class="sec-tag">
-      <div class="sec-tag-line" style="background:rgba(255,255,255,.3)"></div>
-      <span class="sec-tag-text" style="color:rgba(255,255,255,.4)">Por qué elegirnos</span>
+  <div class="why-inner">
+    <div class="why-text">
+      <h2>NO SOMOS EL MÁS GRANDE.</h2>
+      <p>El taller donde el dueño te conoce por tu nombre. Dani te atiende, te explica y te da el precio antes de empezar.</p>
     </div>
-    <h2>No somos<br>el más grande.<br><em>Somos el mejor.</em></h2>
-    <div class="why-stats">
-      <div class="why-stat">
-        <div class="why-stat-num">4.8 / 5</div>
-        <div class="why-stat-lbl">Google Reviews</div>
+    <div class="why-items">
+      <div class="why-item">
+        <span class="why-item-n">01</span>
+        <div><h4>Rapidez real</h4><p>Trabajamos con cita y cumplimos horarios. Tu tiempo importa.</p></div>
       </div>
-      <div class="why-stat">
-        <div class="why-stat-num">273</div>
-        <div class="why-stat-lbl">Opiniones verificadas</div>
+      <div class="why-item">
+        <span class="why-item-n">02</span>
+        <div><h4>Precios claros</h4><p>Lo que acordamos es lo que pagas. Sin sorpresas ni extras raros.</p></div>
       </div>
-      <div class="why-stat">
-        <div class="why-stat-num">+10 años</div>
-        <div class="why-stat-lbl">En Cabral, Vigo</div>
+      <div class="why-item">
+        <span class="why-item-n">03</span>
+        <div><h4>Trato directo con Dani</h4><p>Te atiende el dueño. Con honestidad y sin intermediarios.</p></div>
+      </div>
+      <div class="why-item">
+        <span class="why-item-n">04</span>
+        <div><h4>Raíces en el barrio</h4><p>Desde 2013 en Cabral. Clientes que llevan años con nosotros.</p></div>
       </div>
     </div>
-  </div>
-  <div class="why-right">
-    <div class="why-item">
-      <div class="why-item-icon">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
-      </div>
-      <div><h4>Rapidez real</h4><p>Trabajamos con cita y cumplimos horarios. Entras a la hora prevista, sales a la hora prevista.</p></div>
-    </div>
-    <div class="why-item">
-      <div class="why-item-icon">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
-      </div>
-      <div><h4>Precios claros</h4><p>Te decimos lo que cuesta antes de tocar nada. Lo que acordamos es lo que pagas.</p></div>
-    </div>
-    <div class="why-item">
-      <div class="why-item-icon">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
-      </div>
-      <div><h4>Trato directo con Dani</h4><p>Te atiende el dueño. Te explica qué necesita tu coche y te aconseja con honestidad.</p></div>
-    </div>
-    <div class="why-item">
-      <div class="why-item-icon">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-      </div>
-      <div><h4>Raíces en el barrio</h4><p>Desde 2013 en Cabral. Clientes que llevan años viniendo con todos sus coches.</p></div>
+    <div class="why-stats-strip">
+      <div class="why-stat"><span class="why-stat-num">4.8</span><span class="why-stat-lbl">Google Reviews</span></div>
+      <div class="why-stat"><span class="why-stat-num">273</span><span class="why-stat-lbl">Opiniones verificadas</span></div>
+      <div class="why-stat"><span class="why-stat-num">+10</span><span class="why-stat-lbl">Años en Cabral</span></div>
+      <div class="why-stat"><span class="why-stat-num">TOP 1</span><span class="why-stat-lbl">Taller en Vigo</span></div>
     </div>
   </div>
 </section>
 
 <section class="reviews" id="opiniones">
-  <div class="rev-header">
-    <div>
-      <div class="sec-tag"><div class="sec-tag-line"></div><span class="sec-tag-text">Opiniones reales</span></div>
-      <h2 class="sec-h">Lo dicen ellos,<br><em>no nosotros.</em></h2>
-    </div>
-    <div class="sec-num">273</div>
+  <div class="rev-intro">
+    <h2>LO DICEN <em>ELLOS</em></h2>
+    <div class="rev-intro-score">4.8 ★</div>
   </div>
-  <div class="rev-grid">
-    <div class="rev-card">
-      <div class="rev-stars">★★★★★</div>
-      <p class="rev-text">"Pedazo de profesional. Los horarios los lleva a rajatabla, buenos precios y la atención es buenísima. Sin duda de lo mejorcito."</p>
-      <div class="rev-author">Cliente verificado · Google</div>
+  <div class="rev-stack">
+    <div class="rev-item">
+      <span class="rev-item-num">01</span>
+      <p class="rev-item-text">"Pedazo de profesional. Los horarios los lleva a rajatabla, buenos precios y la atención es buenísima. Sin duda de lo mejorcito."</p>
+      <div class="rev-item-meta"><div class="rev-item-stars">★★★★★</div><div class="rev-item-author">Cliente verificado · Google</div></div>
     </div>
-    <div class="rev-card">
-      <div class="rev-stars">★★★★★</div>
-      <p class="rev-text">"Más de 8 años con este taller. Aunque nos mudemos, pensamos seguir viniendo porque nos atienden siempre de 10."</p>
-      <div class="rev-author">Cliente verificado · Google</div>
+    <div class="rev-item">
+      <span class="rev-item-num">02</span>
+      <p class="rev-item-text">"Más de 8 años con este taller. Aunque nos mudemos, pensamos seguir viniendo porque nos atienden siempre de 10."</p>
+      <div class="rev-item-meta"><div class="rev-item-stars">★★★★★</div><div class="rev-item-author">Cliente verificado · Google</div></div>
     </div>
-    <div class="rev-card">
-      <div class="rev-stars">★★★★★</div>
-      <p class="rev-text">"En una hora tenía la cita y a los 15 minutos las ruedas puestas. El mejor precio tras preguntar en otros sitios."</p>
-      <div class="rev-author">Cliente verificado · Google</div>
+    <div class="rev-item">
+      <span class="rev-item-num">03</span>
+      <p class="rev-item-text">"En una hora tenía la cita y a los 15 minutos las ruedas puestas. El mejor precio tras preguntar en otros sitios."</p>
+      <div class="rev-item-meta"><div class="rev-item-stars">★★★★★</div><div class="rev-item-author">Cliente verificado · Google</div></div>
     </div>
-    <div class="rev-card">
-      <div class="rev-stars">★★★★★</div>
-      <p class="rev-text">"Atención de 5 estrellas y buena calidad/precio. El dueño te explica y aconseja en todo. Se lo merece."</p>
-      <div class="rev-author">Cliente verificado · Google</div>
-    </div>
-    <div class="rev-card">
-      <div class="rev-stars">★★★★★</div>
-      <p class="rev-text">"Fui por recomendación y más contenta no puedo estar. Súper amables, profesionales. Precio razonable. Repetiré."</p>
-      <div class="rev-author">Cliente verificado · Google</div>
-    </div>
-    <div class="rev-card">
-      <div class="rev-stars">★★★★★</div>
-      <p class="rev-text">"Si puede arreglarte el problema, buscará un hueco aunque esté hasta los topes. Buenos precios, lo recomiendo."</p>
-      <div class="rev-author">Cliente verificado · Google</div>
+    <div class="rev-item">
+      <span class="rev-item-num">04</span>
+      <p class="rev-item-text">"Atención de 5 estrellas y buena calidad/precio. El dueño te explica y aconseja en todo. Se lo merece."</p>
+      <div class="rev-item-meta"><div class="rev-item-stars">★★★★★</div><div class="rev-item-author">Cliente verificado · Google</div></div>
     </div>
   </div>
   <div class="rev-more">
@@ -217,94 +158,70 @@
 </section>
 
 <section class="process">
-  <div class="proc-header">
-    <div class="sec-tag"><div class="sec-tag-line"></div><span class="sec-tag-text">Cómo trabajamos</span></div>
-    <h2 class="sec-h">Rápido, claro<br><em>y sin líos.</em></h2>
-  </div>
-  <div class="proc-grid">
+  <h2>ASÍ DE <em>FÁCIL</em></h2>
+  <div class="proc-timeline">
     <div class="proc-step">
-      <div class="proc-step-num">01</div>
+      <div class="proc-dot"><span class="proc-dot-n">01</span></div>
       <h4>Llámanos</h4>
-      <p>Cuéntanos qué necesitas. Te damos precio y disponibilidad al momento. Sin formularios.</p>
+      <p>Cuéntanos qué necesitas. Precio y disponibilidad al momento.</p>
     </div>
     <div class="proc-step">
-      <div class="proc-step-num">02</div>
+      <div class="proc-dot"><span class="proc-dot-n">02</span></div>
       <h4>Trae tu vehículo</h4>
-      <p>Ven al taller a la hora acordada. Av. da Ponte, 16, en Cabral. Fácil de llegar.</p>
+      <p>Ven al taller a la hora acordada. Av. da Ponte, 16, Cabral.</p>
     </div>
     <div class="proc-step">
-      <div class="proc-step-num">03</div>
+      <div class="proc-dot"><span class="proc-dot-n">03</span></div>
       <h4>Nos ponemos a ello</h4>
-      <p>Trabajamos mientras esperas o te avisamos cuando esté listo. Sin demoras.</p>
+      <p>Trabajamos mientras esperas o te avisamos cuando esté listo.</p>
     </div>
     <div class="proc-step">
-      <div class="proc-step-num">04</div>
+      <div class="proc-dot"><span class="proc-dot-n">04</span></div>
       <h4>Sales rodando</h4>
-      <p>Pagas lo que te dijimos. Si necesitas algo más, te lo explicamos antes.</p>
+      <p>Pagas lo que te dijimos. Sin sorpresas.</p>
     </div>
-  </div>
-</section>
-
-<section class="faq">
-  <div class="faq-header">
-    <div class="sec-tag"><div class="sec-tag-line"></div><span class="sec-tag-text">Preguntas frecuentes</span></div>
-    <h2 class="sec-h">Lo que más<br><em>nos preguntan.</em></h2>
-  </div>
-  <div class="faq-grid">
-    <div class="faq-item"><h4>¿Necesito pedir cita?</h4><p>Recomendable para organizarnos y atenderte rápido. Si es urgente, llama y miramos cómo encajarte.</p></div>
-    <div class="faq-item"><h4>¿Cuánto tardáis en un cambio?</h4><p>Entre 30 y 45 minutos con equilibrado. Puedes esperar o dar una vuelta por el barrio.</p></div>
-    <div class="faq-item"><h4>¿Trabajáis con motos?</h4><p>Sí. Todas las medidas y marcas, con montaje y equilibrado profesional incluido.</p></div>
-    <div class="faq-item"><h4>¿Qué marcas tenéis?</h4><p>Pirelli, Goodyear, Bridgestone, Continental, Firestone y opciones económicas de calidad.</p></div>
-    <div class="faq-item"><h4>¿Hacéis mecánica general?</h4><p>Mecánica rápida: aceites, filtros, frenos, distribución, baterías, pre-ITV.</p></div>
-    <div class="faq-item"><h4>¿Dónde estáis?</h4><p>Av. da Ponte, 16, Cabral, Vigo. CP 36215. Fácil de encontrar, con aparcamiento.</p></div>
   </div>
 </section>
 
 <section class="cta">
-  <div class="cta-left">
-    <h2>¿Necesitas neumáticos<br><em>o una revisión?</em></h2>
-    <p>Una llamada y lo resolvemos. Estamos en Av. da Ponte, 16, Cabral, Vigo. Lunes a viernes de 9:00 a 19:30.</p>
-  </div>
-  <div class="cta-right">
-    <a href="tel:+34661176081" class="cta-phone"><em>661</em> 176 081</a>
-    <a href="tel:+34661176081" class="btn-red">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-      Llamar ahora
-    </a>
+  <h2>¿NECESITAS<br><em>NEUMÁTICOS?</em></h2>
+  <a href="tel:+34661176081" class="cta-phone">661 176 081</a>
+  <a href="tel:+34661176081" class="btn-main" style="margin:0 auto;display:inline-flex">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+    Llamar ahora
+  </a>
+</section>
+
+<section class="faq">
+  <h2>LO QUE MÁS <em>NOS PREGUNTAN</em></h2>
+  <div class="faq-list">
+    <div class="faq-item"><span class="faq-q">¿Necesito pedir cita?</span><p class="faq-a">Recomendable para organizarnos y atenderte rápido. Si es urgente, llama y miramos cómo encajarte.</p></div>
+    <div class="faq-item"><span class="faq-q">¿Cuánto tardáis en un cambio?</span><p class="faq-a">Entre 30 y 45 minutos con equilibrado. Puedes esperar o dar una vuelta por el barrio.</p></div>
+    <div class="faq-item"><span class="faq-q">¿Trabajáis con motos?</span><p class="faq-a">Sí. Todas las medidas y marcas, con montaje y equilibrado profesional incluido.</p></div>
+    <div class="faq-item"><span class="faq-q">¿Qué marcas tenéis?</span><p class="faq-a">Pirelli, Goodyear, Bridgestone, Continental, Firestone y opciones económicas de calidad.</p></div>
+    <div class="faq-item"><span class="faq-q">¿Hacéis mecánica general?</span><p class="faq-a">Aceites, filtros, frenos, distribución, baterías, pre-ITV. Para lo que necesites.</p></div>
+    <div class="faq-item"><span class="faq-q">¿Dónde estáis?</span><p class="faq-a">Av. da Ponte, 16, Cabral, Vigo. CP 36215. Con aparcamiento.</p></div>
   </div>
 </section>
 
 <section class="contact" id="contacto">
-  <div class="contact-grid">
-    <div>
-      <div class="sec-tag"><div class="sec-tag-line"></div><span class="sec-tag-text">Ven a vernos</span></div>
-      <h2 class="sec-h">Estamos en<br><em>Cabral, Vigo.</em></h2>
-      <div class="ct-block">
-        <div class="ct-lbl">Teléfono</div>
-        <div class="ct-val"><a href="tel:+34661176081">661 176 081</a></div>
-      </div>
-      <div class="ct-block">
-        <div class="ct-lbl">Fijo</div>
-        <div class="ct-val"><a href="tel:+34986407432">986 407 432</a></div>
-      </div>
-      <div class="ct-block">
-        <div class="ct-lbl">Dirección</div>
-        <div class="ct-val">Av. da Ponte, 16<br>36215 Cabral, Vigo</div>
-      </div>
-      <div class="ct-block">
-        <div class="ct-lbl">Horario</div>
-        <div class="ct-val">Lunes a Viernes: 9:00 – 19:30<br>Sábado y Domingo: Cerrado</div>
-      </div>
+  <h2>ESTAMOS EN <em>CABRAL</em></h2>
+  <div class="contact-layout">
+    <div class="contact-info">
+      <div class="ct-row"><span class="ct-lbl">Teléfono</span><span class="ct-val"><a href="tel:+34661176081">661 176 081</a></span></div>
+      <div class="ct-row"><span class="ct-lbl">Fijo</span><span class="ct-val"><a href="tel:+34986407432">986 407 432</a></span></div>
+      <div class="ct-row"><span class="ct-lbl">Dirección</span><span class="ct-val">Av. da Ponte, 16 · 36215 Cabral, Vigo</span></div>
+      <div class="ct-row"><span class="ct-lbl">Horario</span><span class="ct-val">Lunes a Viernes: 9:00 – 19:30<br>Sábado y Domingo: Cerrado</span></div>
       <div class="ct-btns">
-        <a href="tel:+34661176081" class="btn-red">
+        <a href="tel:+34661176081" class="btn-main">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
           Llamar ahora
         </a>
-        <a href="https://maps.google.com/?q=Neumaticos+Cabral+Vigo" class="btn-line" target="_blank">Cómo llegar →</a>
+        <a href="https://maps.google.com/?q=Neumaticos+Cabral+Vigo" class="btn-ghost-c" target="_blank">Cómo llegar →</a>
       </div>
     </div>
-    <div class="map-frame">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2954.8!2d-8.7389!3d42.2034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd2f627c8db5e2b9%3A0x47b7c8e2f8f8f8f8!2sNeum%C3%A1ticos%20Cabral!5e0!3m2!1ses!2ses!4v1700000000000!5m2!1ses!2ses" allowfullscreen="" loading="lazy"></iframe>
+    <div class="map-box">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2954.8!2d-8.7389!3d42.2034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd2f627c8db5e2b9%3A0x47b7c8e2f8f8f8f8!2sNeum%C3%A1ticos%20Cabral!5e0!3m2!1ses!2ses!4v1700000000000!5m2!1ses!2ses" allowfullscreen loading="lazy"></iframe>
     </div>
   </div>
 </section>
@@ -319,9 +236,9 @@
   <div class="foot-copy">© 2025 Neumáticos Cabral · Tu taller de confianza en Vigo desde 2013</div>
 </footer>
 
-<a href="tel:+34661176081" class="phone-float" aria-label="Llamar">
-  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-</a>
+<div class="scroll-top" id="scrollTop" aria-label="Volver arriba">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 15l-6-6-6 6"/></svg>
+</div>
 
 <script src="script.js"></script>
 </body>
