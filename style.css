@@ -14,9 +14,9 @@ ul, ol { list-style: none; }
 :root {
   /* Paleta */
   --carbon:   #0C0B09;   /* negro carbón principal */
-  --ink:      #141210;   /* negro tinta, fondo alt */
-  --forge:    #141210;   /* forja, superficie elevada */
-  --rust-bg:  #1A0E08;   /* fondo sección roja oscura */
+  --ink:      #131313;   /* negro tinta, fondo alt */
+  --forge:    #131313;   /* forja, superficie elevada */
+  --rust-bg:  #161616;   /* fondo sección roja oscura */
   --red:      #C0271E;   /* rojo señalética */
   --red-dk:   #9E1F18;   /* rojo hover */
   --amber:    #C47A2A;   /* ámbar/óxido, acento secundario */
@@ -336,7 +336,7 @@ p {
   max-width: 460px;
   margin-bottom: 36px;
   padding-left: 18px;
-  border-left: 3px solid var(--amber);
+  border-left: 3px solid #B86A2A;
 }
 
 .hero-actions {
@@ -438,7 +438,7 @@ p {
    ============================================= */
 .services {
   padding: var(--section) 0;
-  background: #141210;
+  background: #131313;
   border-top: 1px solid var(--border);
 }
 
@@ -621,7 +621,7 @@ p {
 }
 
 .review-card {
-  background: #1A1815;
+  background: #1C1C1C;
   padding: 28px 24px;
   display: flex;
   flex-direction: column;
@@ -666,7 +666,7 @@ p {
    ============================================= */
 .process {
   padding: var(--section) 0;
-  background: #181512;
+  background: #131313;
   border-top: 1px solid var(--border);
 }
 .process .section-label { color: rgba(237,228,204,.4); }
@@ -757,7 +757,7 @@ p {
    ============================================= */
 .faq {
   padding: var(--section) 0;
-  background: #141210;
+  background: #131313;
   border-top: 1px solid var(--border);
 }
 
