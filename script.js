@@ -1,8 +1,8 @@
 document.addEventListener('DOMContentLoaded', function () {
 
-  // TICKER
+  // === TICKER ===
   const items = [
-    '4.8 / 5 · Google Reviews',
+    '4.8 / 5 en Google',
     '+10 años en Cabral',
     '273 opiniones verificadas',
     'TOP 1 taller en Vigo',
@@ -13,31 +13,24 @@ document.addEventListener('DOMContentLoaded', function () {
   ];
   const track = document.getElementById('ticker-track');
   if (track) {
-    const html = items.map(t => `
-      <div class="ticker-item">
-        <span class="ticker-star">✦</span>
-        <span class="ticker-text">${t}</span>
-      </div>
-    `).join('');
+    const html = items.map(t =>
+      `<div class="ticker-item"><span class="ticker-dot"></span><span class="ticker-text">${t}</span></div>`
+    ).join('');
     track.innerHTML = html + html + html;
   }
 
-  // SCROLL TOP
-  const scrollBtn = document.getElementById('scrollTop');
-  if (scrollBtn) {
+  // === SCROLL TOP ===
+  const btn = document.getElementById('scrollTop');
+  if (btn) {
     window.addEventListener('scroll', function () {
-      if (window.scrollY > 400) {
-        scrollBtn.classList.add('visible');
-      } else {
-        scrollBtn.classList.remove('visible');
-      }
+      btn.classList.toggle('visible', window.scrollY > 500);
     });
-    scrollBtn.addEventListener('click', function () {
+    btn.addEventListener('click', function () {
       window.scrollTo({ top: 0, behavior: 'smooth' });
     });
   }
 
-  // SCROLL REVEAL
+  // === SCROLL REVEAL ===
   const observer = new IntersectionObserver(function (entries) {
     entries.forEach(function (entry) {
       if (entry.isIntersecting) {
@@ -48,10 +41,12 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }, { threshold: 0.08 });
 
-  document.querySelectorAll('.srv-row, .rev-item, .proc-step, .why-item, .faq-item').forEach(function (el, i) {
+  document.querySelectorAll(
+    '.service-row, .review-card, .process-step, .why-item, .faq-item'
+  ).forEach(function (el, i) {
     el.style.opacity = '0';
-    el.style.transform = 'translateY(20px)';
-    el.style.transition = `opacity .55s ease ${i * 0.05}s, transform .55s ease ${i * 0.05}s`;
+    el.style.transform = 'translateY(16px)';
+    el.style.transition = `opacity .5s ease ${i * 0.04}s, transform .5s ease ${i * 0.04}s`;
     observer.observe(el);
   });
 
