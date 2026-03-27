@@ -889,7 +889,7 @@ p {
   display: grid;
   grid-template-columns: 1fr 1.3fr;
   gap: clamp(32px, 5vw, 64px);
-  align-items: start;
+  align-items: stretch;
 }
 
 .contact-info h2 { color: var(--cream); margin-bottom: 24px; }
@@ -934,8 +934,10 @@ p {
 .contact-map {
   border: 1px solid var(--border);
   overflow: hidden;
-  min-height: 360px;
   position: relative;
+  height: 100%;
+  min-height: 480px;
+  align-self: stretch;
 }
 .contact-map iframe {
   position: absolute;
