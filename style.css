@@ -268,12 +268,12 @@ p {
 .hero-inner {
   max-width: var(--max);
   margin: 0 auto;
-  padding: clamp(56px, 9vh, 104px) clamp(20px, 5vw, 48px);
+  padding: clamp(52px, 8vh, 96px) clamp(20px, 5vw, 48px);
   display: grid;
-  grid-template-columns: 1.1fr .9fr;
-  gap: clamp(32px, 4vw, 56px);
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: clamp(28px, 3.5vw, 48px);
   align-items: center;
-  min-height: calc(92vh - 60px);
+  min-height: calc(92vh - 68px);
 }
 
 .hero-kicker {
@@ -366,88 +366,141 @@ p {
 /* HERO IMAGE */
 .hero-image {
   position: relative;
-  aspect-ratio: 3/4;
-  background: #0F0F0F;
-  border: 2px solid rgba(192,39,30,.4);
+  aspect-ratio: 2/3;
+  background: #0A0A0A;
+  border: 2px solid rgba(192,39,30,.35);
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 .hero-placeholder {
   position: absolute;
-  inset: 0;
+  inset: 40px 0 48px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 0;
+  z-index: 2;
 }
 .hero-placeholder svg {
-  width: 36px;
-  height: 36px;
-  stroke: rgba(192,39,30,.3);
+  width: 32px;
+  height: 32px;
+  stroke: rgba(192,39,30,.25);
   fill: none;
-  margin-bottom: 14px;
+  margin-bottom: 12px;
 }
 .hero-placeholder p {
-  font-size: 12px;
+  font-family: var(--body);
+  font-size: 11px;
   font-weight: 600;
-  letter-spacing: .16em;
+  letter-spacing: .18em;
   text-transform: uppercase;
   text-align: center;
-  line-height: 1.8;
-  color: rgba(200,188,158,.3);
+  line-height: 2;
+  color: rgba(200,188,158,.25);
 }
+
+/* Label — placa metálica superior */
 .hero-image-label {
   position: absolute;
   top: 0;
   left: 0;
-  background: var(--red);
+  right: 0;
+  background: rgba(192,39,30,.9);
   color: #fff;
   font-family: var(--body);
   font-size: 11px;
   font-weight: 700;
-  letter-spacing: .18em;
+  letter-spacing: .22em;
   text-transform: uppercase;
-  padding: 7px 14px;
-  z-index: 2;
+  padding: 8px 16px;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
+.hero-image-label::after {
+  content: '▸';
+  font-size: 9px;
+  opacity: .6;
+}
+
+/* Caption inferior */
 .hero-image-caption {
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
-  background: rgba(12,11,9,.85);
-  border-top: 1px solid rgba(192,39,30,.3);
-  color: rgba(200,188,158,.55);
+  background: rgba(10,10,10,.9);
+  border-top: 1px solid rgba(192,39,30,.25);
+  color: rgba(200,188,158,.45);
   font-family: var(--body);
-  font-size: 11px;
+  font-size: 10px;
   font-weight: 600;
-  letter-spacing: .16em;
+  letter-spacing: .18em;
   text-transform: uppercase;
   padding: 10px 16px;
-  z-index: 2;
+  z-index: 3;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.hero-image-caption::before {
-  content: '◆';
-  color: var(--red);
-  font-size: 7px;
-  margin-right: 8px;
+.hero-image-caption .caption-dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--red);
+  opacity: .6;
+  flex-shrink: 0;
 }
+
+/* Líneas técnicas de fondo */
 .hero-image-lines {
   position: absolute;
   inset: 0;
   z-index: 1;
-  opacity: .04;
   background-image:
     repeating-linear-gradient(
-      -35deg,
-      rgba(200,188,158,.8) 0px,
-      rgba(200,188,158,.8) 1px,
+      -40deg,
+      rgba(200,188,158,.025) 0px,
+      rgba(200,188,158,.025) 1px,
       transparent 1px,
-      transparent 48px
+      transparent 52px
+    ),
+    repeating-linear-gradient(
+      50deg,
+      rgba(200,188,158,.012) 0px,
+      rgba(200,188,158,.012) 1px,
+      transparent 1px,
+      transparent 80px
     );
+}
+
+/* Corner accent */
+.hero-image::before {
+  content: '';
+  position: absolute;
+  bottom: 48px;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  border-bottom: 2px solid rgba(192,39,30,.3);
+  border-right: 2px solid rgba(192,39,30,.3);
+  z-index: 2;
+  pointer-events: none;
+}
+.hero-image::after {
+  content: '';
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 28px;
+  height: 28px;
+  border-top: 2px solid rgba(192,39,30,.3);
+  border-left: 2px solid rgba(192,39,30,.3);
+  z-index: 2;
+  pointer-events: none;
 }
 
 /* =============================================
