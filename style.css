@@ -568,21 +568,22 @@ p {
   content: '';
   position: absolute;
   inset: 0;
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.04'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.09'/%3E%3C/svg%3E");
   pointer-events: none;
   z-index: 0;
 }
 .why::after {
   content: 'CABRAL';
   position: absolute;
-  bottom: -20px;
-  right: -10px;
+  bottom: -40px;
+  right: -20px;
   font-family: var(--display);
-  font-size: clamp(3rem, 7vw, 8rem);
-  color: rgba(0,0,0,.12);
+  font-size: clamp(6rem, 14vw, 16rem);
+  color: rgba(0,0,0,.18);
   line-height: 1;
   pointer-events: none;
   white-space: nowrap;
+  letter-spacing: .02em;
 }
 
 .why-grid {
@@ -592,6 +593,14 @@ p {
   align-items: start;
   position: relative;
   z-index: 2;
+}
+.why .btn-primary {
+  background: #0C0B09;
+  color: #fff;
+  border: none;
+}
+.why .btn-primary:hover {
+  background: #1A1815;
 }
 
 .why-text h2 {
